@@ -1,0 +1,11 @@
+framework module TwilioSyncClient {
+  umbrella header "TwilioSyncClient.h"
+
+  export *
+  module * { export * }
+}
+
+module TwilioSyncClient.Swift {
+  header "TwilioSyncClient-Swift.h"
+  requires objc
+}

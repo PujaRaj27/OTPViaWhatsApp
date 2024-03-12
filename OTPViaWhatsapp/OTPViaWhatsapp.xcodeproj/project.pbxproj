@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AE90A900C39C5F625CBD11C /* Pods_OTPViaWhatsapp_OTPViaWhatsappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D5F69022FD69E4270634DA /* Pods_OTPViaWhatsapp_OTPViaWhatsappUITests.framework */; };
+		8767A3E22B98449F008B89D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A3E12B98449F008B89D7 /* AppDelegate.swift */; };
+		8767A3E42B98449F008B89D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A3E32B98449F008B89D7 /* SceneDelegate.swift */; };
+		8767A3E62B98449F008B89D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A3E52B98449F008B89D7 /* ViewController.swift */; };
+		8767A3E92B98449F008B89D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767A3E72B98449F008B89D7 /* Main.storyboard */; };
+		8767A3EC2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8767A3EA2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodeld */; };
+		8767A3EE2B9844A4008B89D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8767A3ED2B9844A4008B89D7 /* Assets.xcassets */; };
+		8767A3F12B9844A4008B89D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767A3EF2B9844A4008B89D7 /* LaunchScreen.storyboard */; };
+		8767A3FC2B9844A4008B89D7 /* OTPViaWhatsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A3FB2B9844A4008B89D7 /* OTPViaWhatsappTests.swift */; };
+		8767A4062B9844A5008B89D7 /* OTPViaWhatsappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A4052B9844A5008B89D7 /* OTPViaWhatsappUITests.swift */; };
+		8767A4082B9844A5008B89D7 /* OTPViaWhatsappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A4072B9844A5008B89D7 /* OTPViaWhatsappUITestsLaunchTests.swift */; };
+		8767A4152B986822008B89D7 /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A4142B986822008B89D7 /* TwilioService.swift */; };
+		8CCE057202D6CFC2343844ED /* Pods_OTPViaWhatsappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889D43082926DE2C105DC838 /* Pods_OTPViaWhatsappTests.framework */; };
+		BC89ADE07E77322685C4B796 /* Pods_OTPViaWhatsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F873867BEF22FBE8FED4B1 /* Pods_OTPViaWhatsapp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8767A3F82B9844A4008B89D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8767A3D62B98449F008B89D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8767A3DD2B98449F008B89D7;
+			remoteInfo = OTPViaWhatsapp;
+		};
+		8767A4022B9844A4008B89D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8767A3D62B98449F008B89D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8767A3DD2B98449F008B89D7;
+			remoteInfo = OTPViaWhatsapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20D61C0EEEEB92CAC6A37FE7 /* Pods-OTPViaWhatsappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPViaWhatsappTests.release.xcconfig"; path = "Target Support Files/Pods-OTPViaWhatsappTests/Pods-OTPViaWhatsappTests.release.xcconfig"; sourceTree = "<group>"; };
+		84D5F69022FD69E4270634DA /* Pods_OTPViaWhatsapp_OTPViaWhatsappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPViaWhatsapp_OTPViaWhatsappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8530B68C6B6A5E510E21AA99 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig"; path = "Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8767A3DE2B98449F008B89D7 /* OTPViaWhatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTPViaWhatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8767A3E12B98449F008B89D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8767A3E32B98449F008B89D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8767A3E52B98449F008B89D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8767A3E82B98449F008B89D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8767A3EB2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OTPViaWhatsapp.xcdatamodel; sourceTree = "<group>"; };
+		8767A3ED2B9844A4008B89D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8767A3F02B9844A4008B89D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8767A3F22B9844A4008B89D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8767A3F72B9844A4008B89D7 /* OTPViaWhatsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPViaWhatsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8767A3FB2B9844A4008B89D7 /* OTPViaWhatsappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViaWhatsappTests.swift; sourceTree = "<group>"; };
+		8767A4012B9844A4008B89D7 /* OTPViaWhatsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPViaWhatsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8767A4052B9844A5008B89D7 /* OTPViaWhatsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViaWhatsappUITests.swift; sourceTree = "<group>"; };
+		8767A4072B9844A5008B89D7 /* OTPViaWhatsappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViaWhatsappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8767A4142B986822008B89D7 /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
+		889D43082926DE2C105DC838 /* Pods_OTPViaWhatsappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPViaWhatsappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B933926EB69DFC940ED362B6 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig"; path = "Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7880D47133F9DC2F0D93CBA /* Pods-OTPViaWhatsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPViaWhatsapp.debug.xcconfig"; path = "Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp.debug.xcconfig"; sourceTree = "<group>"; };
+		EAB0296A892826522CEA198E /* Pods-OTPViaWhatsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPViaWhatsapp.release.xcconfig"; path = "Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp.release.xcconfig"; sourceTree = "<group>"; };
+		F66FA2A866AA7746C5DF7D0A /* Pods-OTPViaWhatsappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTPViaWhatsappTests.debug.xcconfig"; path = "Target Support Files/Pods-OTPViaWhatsappTests/Pods-OTPViaWhatsappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7F873867BEF22FBE8FED4B1 /* Pods_OTPViaWhatsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTPViaWhatsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8767A3DB2B98449F008B89D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC89ADE07E77322685C4B796 /* Pods_OTPViaWhatsapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8767A3F42B9844A4008B89D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCE057202D6CFC2343844ED /* Pods_OTPViaWhatsappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8767A3FE2B9844A4008B89D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE90A900C39C5F625CBD11C /* Pods_OTPViaWhatsapp_OTPViaWhatsappUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8767A3D52B98449F008B89D7 = {
+			isa = PBXGroup;
+			children = (
+				8767A3E02B98449F008B89D7 /* OTPViaWhatsapp */,
+				8767A3FA2B9844A4008B89D7 /* OTPViaWhatsappTests */,
+				8767A4042B9844A5008B89D7 /* OTPViaWhatsappUITests */,
+				8767A3DF2B98449F008B89D7 /* Products */,
+				EC0AC4E3AB30E1612EBD3229 /* Pods */,
+				A8D09356C28300B37A11998B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8767A3DF2B98449F008B89D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8767A3DE2B98449F008B89D7 /* OTPViaWhatsapp.app */,
+				8767A3F72B9844A4008B89D7 /* OTPViaWhatsappTests.xctest */,
+				8767A4012B9844A4008B89D7 /* OTPViaWhatsappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8767A3E02B98449F008B89D7 /* OTPViaWhatsapp */ = {
+			isa = PBXGroup;
+			children = (
+				8767A3E12B98449F008B89D7 /* AppDelegate.swift */,
+				8767A3E32B98449F008B89D7 /* SceneDelegate.swift */,
+				8767A3E52B98449F008B89D7 /* ViewController.swift */,
+				8767A3E72B98449F008B89D7 /* Main.storyboard */,
+				8767A3ED2B9844A4008B89D7 /* Assets.xcassets */,
+				8767A3EF2B9844A4008B89D7 /* LaunchScreen.storyboard */,
+				8767A3F22B9844A4008B89D7 /* Info.plist */,
+				8767A3EA2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodeld */,
+				8767A4142B986822008B89D7 /* TwilioService.swift */,
+			);
+			path = OTPViaWhatsapp;
+			sourceTree = "<group>";
+		};
+		8767A3FA2B9844A4008B89D7 /* OTPViaWhatsappTests */ = {
+			isa = PBXGroup;
+			children = (
+				8767A3FB2B9844A4008B89D7 /* OTPViaWhatsappTests.swift */,
+			);
+			path = OTPViaWhatsappTests;
+			sourceTree = "<group>";
+		};
+		8767A4042B9844A5008B89D7 /* OTPViaWhatsappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8767A4052B9844A5008B89D7 /* OTPViaWhatsappUITests.swift */,
+				8767A4072B9844A5008B89D7 /* OTPViaWhatsappUITestsLaunchTests.swift */,
+			);
+			path = OTPViaWhatsappUITests;
+			sourceTree = "<group>";
+		};
+		A8D09356C28300B37A11998B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7F873867BEF22FBE8FED4B1 /* Pods_OTPViaWhatsapp.framework */,
+				84D5F69022FD69E4270634DA /* Pods_OTPViaWhatsapp_OTPViaWhatsappUITests.framework */,
+				889D43082926DE2C105DC838 /* Pods_OTPViaWhatsappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC0AC4E3AB30E1612EBD3229 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7880D47133F9DC2F0D93CBA /* Pods-OTPViaWhatsapp.debug.xcconfig */,
+				EAB0296A892826522CEA198E /* Pods-OTPViaWhatsapp.release.xcconfig */,
+				8530B68C6B6A5E510E21AA99 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig */,
+				B933926EB69DFC940ED362B6 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig */,
+				F66FA2A866AA7746C5DF7D0A /* Pods-OTPViaWhatsappTests.debug.xcconfig */,
+				20D61C0EEEEB92CAC6A37FE7 /* Pods-OTPViaWhatsappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8767A3DD2B98449F008B89D7 /* OTPViaWhatsapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8767A40B2B9844A5008B89D7 /* Build configuration list for PBXNativeTarget "OTPViaWhatsapp" */;
+			buildPhases = (
+				E569E9C4710E6A5F780C0F24 /* [CP] Check Pods Manifest.lock */,
+				8767A3DA2B98449F008B89D7 /* Sources */,
+				8767A3DB2B98449F008B89D7 /* Frameworks */,
+				8767A3DC2B98449F008B89D7 /* Resources */,
+				B65F8E166E6084C2DDDC8A87 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTPViaWhatsapp;
+			productName = OTPViaWhatsapp;
+			productReference = 8767A3DE2B98449F008B89D7 /* OTPViaWhatsapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8767A3F62B9844A4008B89D7 /* OTPViaWhatsappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8767A40E2B9844A5008B89D7 /* Build configuration list for PBXNativeTarget "OTPViaWhatsappTests" */;
+			buildPhases = (
+				A8193AF7C17643B366F0D95F /* [CP] Check Pods Manifest.lock */,
+				8767A3F32B9844A4008B89D7 /* Sources */,
+				8767A3F42B9844A4008B89D7 /* Frameworks */,
+				8767A3F52B9844A4008B89D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8767A3F92B9844A4008B89D7 /* PBXTargetDependency */,
+			);
+			name = OTPViaWhatsappTests;
+			productName = OTPViaWhatsappTests;
+			productReference = 8767A3F72B9844A4008B89D7 /* OTPViaWhatsappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8767A4002B9844A4008B89D7 /* OTPViaWhatsappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8767A4112B9844A5008B89D7 /* Build configuration list for PBXNativeTarget "OTPViaWhatsappUITests" */;
+			buildPhases = (
+				10A7AFB7850068D910D7B0BE /* [CP] Check Pods Manifest.lock */,
+				8767A3FD2B9844A4008B89D7 /* Sources */,
+				8767A3FE2B9844A4008B89D7 /* Frameworks */,
+				8767A3FF2B9844A4008B89D7 /* Resources */,
+				E832F34552EAB8F5F5AC8D1C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8767A4032B9844A4008B89D7 /* PBXTargetDependency */,
+			);
+			name = OTPViaWhatsappUITests;
+			productName = OTPViaWhatsappUITests;
+			productReference = 8767A4012B9844A4008B89D7 /* OTPViaWhatsappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8767A3D62B98449F008B89D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8767A3DD2B98449F008B89D7 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					8767A3F62B9844A4008B89D7 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 8767A3DD2B98449F008B89D7;
+					};
+					8767A4002B9844A4008B89D7 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 8767A3DD2B98449F008B89D7;
+					};
+				};
+			};
+			buildConfigurationList = 8767A3D92B98449F008B89D7 /* Build configuration list for PBXProject "OTPViaWhatsapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8767A3D52B98449F008B89D7;
+			productRefGroup = 8767A3DF2B98449F008B89D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8767A3DD2B98449F008B89D7 /* OTPViaWhatsapp */,
+				8767A3F62B9844A4008B89D7 /* OTPViaWhatsappTests */,
+				8767A4002B9844A4008B89D7 /* OTPViaWhatsappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8767A3DC2B98449F008B89D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8767A3F12B9844A4008B89D7 /* LaunchScreen.storyboard in Resources */,
+				8767A3EE2B9844A4008B89D7 /* Assets.xcassets in Resources */,
+				8767A3E92B98449F008B89D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8767A3F52B9844A4008B89D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8767A3FF2B9844A4008B89D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10A7AFB7850068D910D7B0BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8193AF7C17643B366F0D95F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTPViaWhatsappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B65F8E166E6084C2DDDC8A87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E569E9C4710E6A5F780C0F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTPViaWhatsapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E832F34552EAB8F5F5AC8D1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8767A3DA2B98449F008B89D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8767A3E62B98449F008B89D7 /* ViewController.swift in Sources */,
+				8767A3E22B98449F008B89D7 /* AppDelegate.swift in Sources */,
+				8767A3EC2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodeld in Sources */,
+				8767A3E42B98449F008B89D7 /* SceneDelegate.swift in Sources */,
+				8767A4152B986822008B89D7 /* TwilioService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8767A3F32B9844A4008B89D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8767A3FC2B9844A4008B89D7 /* OTPViaWhatsappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8767A3FD2B9844A4008B89D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8767A4062B9844A5008B89D7 /* OTPViaWhatsappUITests.swift in Sources */,
+				8767A4082B9844A5008B89D7 /* OTPViaWhatsappUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8767A3F92B9844A4008B89D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8767A3DD2B98449F008B89D7 /* OTPViaWhatsapp */;
+			targetProxy = 8767A3F82B9844A4008B89D7 /* PBXContainerItemProxy */;
+		};
+		8767A4032B9844A4008B89D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8767A3DD2B98449F008B89D7 /* OTPViaWhatsapp */;
+			targetProxy = 8767A4022B9844A4008B89D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8767A3E72B98449F008B89D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8767A3E82B98449F008B89D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8767A3EF2B9844A4008B89D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8767A3F02B9844A4008B89D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8767A4092B9844A5008B89D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8767A40A2B9844A5008B89D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8767A40C2B9844A5008B89D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7880D47133F9DC2F0D93CBA /* Pods-OTPViaWhatsapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F665B8WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTPViaWhatsapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OTPViaWhatsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8767A40D2B9844A5008B89D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB0296A892826522CEA198E /* Pods-OTPViaWhatsapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F665B8WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OTPViaWhatsapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OTPViaWhatsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8767A40F2B9844A5008B89D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66FA2A866AA7746C5DF7D0A /* Pods-OTPViaWhatsappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F665B8WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OTPViaWhatsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTPViaWhatsapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OTPViaWhatsapp";
+			};
+			name = Debug;
+		};
+		8767A4102B9844A5008B89D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D61C0EEEEB92CAC6A37FE7 /* Pods-OTPViaWhatsappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F665B8WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OTPViaWhatsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTPViaWhatsapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OTPViaWhatsapp";
+			};
+			name = Release;
+		};
+		8767A4122B9844A5008B89D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8530B68C6B6A5E510E21AA99 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F665B8WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OTPViaWhatsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OTPViaWhatsapp;
+			};
+			name = Debug;
+		};
+		8767A4132B9844A5008B89D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B933926EB69DFC940ED362B6 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F665B8WA8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OTPViaWhatsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OTPViaWhatsapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8767A3D92B98449F008B89D7 /* Build configuration list for PBXProject "OTPViaWhatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8767A4092B9844A5008B89D7 /* Debug */,
+				8767A40A2B9844A5008B89D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8767A40B2B9844A5008B89D7 /* Build configuration list for PBXNativeTarget "OTPViaWhatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8767A40C2B9844A5008B89D7 /* Debug */,
+				8767A40D2B9844A5008B89D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8767A40E2B9844A5008B89D7 /* Build configuration list for PBXNativeTarget "OTPViaWhatsappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8767A40F2B9844A5008B89D7 /* Debug */,
+				8767A4102B9844A5008B89D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8767A4112B9844A5008B89D7 /* Build configuration list for PBXNativeTarget "OTPViaWhatsappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8767A4122B9844A5008B89D7 /* Debug */,
+				8767A4132B9844A5008B89D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8767A3EA2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8767A3EB2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodel */,
+			);
+			currentVersion = 8767A3EB2B98449F008B89D7 /* OTPViaWhatsapp.xcdatamodel */;
+			path = OTPViaWhatsapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8767A3D62B98449F008B89D7 /* Project object */;
+}

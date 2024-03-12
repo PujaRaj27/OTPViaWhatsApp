@@ -1,0 +1,5 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVerifySDK.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioCommonLib.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioStateMachine.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioSyncClient.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioTwilsockLib.framework

@@ -1,0 +1,6 @@
+framework module TwilioVerifySDK {
+  umbrella header "TwilioVerify-umbrella.h"
+
+  export *
+  module * { export * }
+}

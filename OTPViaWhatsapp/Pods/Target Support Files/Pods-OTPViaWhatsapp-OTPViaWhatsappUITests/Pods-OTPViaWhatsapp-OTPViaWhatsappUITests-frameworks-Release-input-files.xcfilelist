@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/TwilioVerify/TwilioVerifySDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioCommonLib/TwilioCommonLib.framework/TwilioCommonLib
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioStateMachine/TwilioStateMachine.framework/TwilioStateMachine
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioSyncClient/TwilioSyncClient.framework/TwilioSyncClient
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioTwilsockLib/TwilioTwilsockLib.framework/TwilioTwilsockLib

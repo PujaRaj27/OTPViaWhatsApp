@@ -1,0 +1,1814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		13720C82CBDD530272DF99EFEDA3C6CF /* TwilioTwilsockLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8F45CBC50A821705C5F870567711C1F5 /* Build configuration list for PBXAggregateTarget "TwilioTwilsockLib" */;
+			buildPhases = (
+				7A624F1436F95789FD91277E60D5BD07 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				B0D9E1B801BD50470C7B32D28B612C8C /* PBXTargetDependency */,
+				FD0D6E33BD3EFCD51B3F769EB664A62E /* PBXTargetDependency */,
+			);
+			name = TwilioTwilsockLib;
+		};
+		4E2F51DDC73137FD3E9DFCE3FA62C5C9 /* TwilioCommonLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CA2B993114E506FB3BF873C3D5E7B67E /* Build configuration list for PBXAggregateTarget "TwilioCommonLib" */;
+			buildPhases = (
+				11EB622F8861AD7C549D4E269808826C /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = TwilioCommonLib;
+		};
+		9850155A3CF46354A6D482C894F42B43 /* TwilioSyncClient */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 16C321BBA2435CE94F445F65CC19D9B7 /* Build configuration list for PBXAggregateTarget "TwilioSyncClient" */;
+			buildPhases = (
+				4B663BF06A2A43CD96299DBF600EA884 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				62A1AEE8E2AD11697099E58B0C5773F9 /* PBXTargetDependency */,
+			);
+			name = TwilioSyncClient;
+		};
+		B580861207E90FF7AF4257A61B108DD2 /* TwilioStateMachine */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5DDE9F721FA3096017984D95ED326D2B /* Build configuration list for PBXAggregateTarget "TwilioStateMachine" */;
+			buildPhases = (
+				8BDAD1CEE3B306D2820B0F78649D1192 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = TwilioStateMachine;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0342C55F4943DCCCF956A12F6F04BDE6 /* FactorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C05EAF86121DAE72AE6BADE3CD45DE /* FactorRepository.swift */; };
+		046FC102DB5E23424361FF3057A0D022 /* FactorFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C717A884EBB10FF267B3EB1EE7A24D /* FactorFacade.swift */; };
+		04A6965F2A7F279014C2C3676B494B7C /* Pods-OTPViaWhatsapp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DBE2E477E9F27ED08D5E5E15878B7DA /* Pods-OTPViaWhatsapp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		070E82DC29FC6B4B083639F2283F4612 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0BF8F079C05A649921E8BDD6EA7FA428 /* FactorAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60189C60E9EED2204E19BA17239074 /* FactorAPIClient.swift */; };
+		10818E7DAD504382BEFCAD76C42D08C1 /* PushFactorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121D204B9274F41829E7D536AFCF6A0 /* PushFactorDTO.swift */; };
+		11EE738AA71A04977EE9F02C4EDB3DB4 /* DateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0B009BD17B467A21B3327426ABBE1 /* DateProvider.swift */; };
+		124F071CB2899094F62E899EEBD2E09C /* PushChallengeProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58D1A708B188F3A09AA8068749B9F2 /* PushChallengeProcessor.swift */; };
+		13F268B00FA7065D9E9FFECDD72627F4 /* RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44997139BF21FD03D1BB8E8AF6304223 /* RequestHelper.swift */; };
+		1539C8A3DEE94492D549C8DB01D0BF7A /* TwilioVerify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FC45A1033ECF18D34F61F93AC2B2DB /* TwilioVerify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		246E3038D9B4A1AF646EE8BE21DFBC46 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A18B1092C0F6E6D18AAAEE681CD8C /* Template.swift */; };
+		253FD09D5158F52F64866D3CE79C21B4 /* FactorMigrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E06C28FBD562AB752632A928C85C8 /* FactorMigrations.swift */; };
+		2AD91A5FB74685F1B6C5074C5C96E6A6 /* TwilioVerifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2104408B7AFD99CF39FA05A5FC6066 /* TwilioVerifyManager.swift */; };
+		2F6F901CDD129B9C02B4D0CF24978350 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		30151A6502FF879274AC8795F30C1F7C /* BasicAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE8C940B1299E3C441AB8EDBFE03E78 /* BasicAuthorization.swift */; };
+		3BCC1EC480F480AE1C27788CCB1CA95F /* ChallengeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF876EB89F8D69A6E71E042582E7BD /* ChallengeMapper.swift */; };
+		3C3A7DBA72BF2E5CF706B90A2C14BAF2 /* KeychainQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A2FF33B9755810C63376F13F08B15 /* KeychainQuery.swift */; };
+		3D462B703B8663FCB97B0184DCBA8A47 /* Factor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369551519325C25E866A74C417D6E365 /* Factor.swift */; };
+		3E45980C80BA755BB46BA05B03E0F894 /* ChallengeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BF902E2D63F477254682E7BDD67B7 /* ChallengeList.swift */; };
+		3E70A65428A281D6388FE78D347FAC2A /* Pods-OTPViaWhatsapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3169794829E4C97800BFE048F513490C /* Pods-OTPViaWhatsapp-dummy.m */; };
+		3E86B4BD50CFD901E22631FE0BBB8FA7 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8CC4EF2B9C68C176962020275AC89 /* MediaType.swift */; };
+		409716ED31A25A84DA7D29313ADB2D66 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E364FADB5614C66CFCA41359879F3330 /* HTTPHeaders.swift */; };
+		41FE680E4DAF755CB80D7E94BA14DB04 /* TwilioVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B52ABDD0D5FB67982833D9DA7637D6 /* TwilioVerify.swift */; };
+		42B3A2F6AD3DAEB1202ACE9FD204C177 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A56D60535E079C6175272267323D6029 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DF9268FAC3BB1B366155D4FF1FCC0F7 /* ChallengeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8683E3D523CF2B5D08CF5DFE8A0ACE5F /* ChallengeDTO.swift */; };
+		53038B27716285A9ED2F670CCD719B71 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E4BAAF99E2B02FF8EA488B39B053E /* Storage.swift */; };
+		545B73DD13CD96352F939BEF23BA245F /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E427D1BF600AC6D5F870B0CA607A /* SecureStorage.swift */; };
+		551FB532B2F14F3129B96C659232B384 /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE831140BEBA773EED222DEB5406EC3 /* Migration.swift */; };
+		5537FAE903DAAABB0334E417435A2935 /* ECP256SignerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312410483994B03BD6DE09899D03B81 /* ECP256SignerTemplate.swift */; };
+		55B44CC5ABACD6C222598BF0DB7AF306 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DFE5334042E3B08DB45B005DB59CC2 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-dummy.m */; };
+		5A950AD885904CAED5FE9632EFEB5817 /* JwtGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61748ED13CDF7F904FA8DDA5BD6E0EF8 /* JwtGenerator.swift */; };
+		5D3B62585C139AD7A341457B23AA6F88 /* Pods-OTPViaWhatsappTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8C86DD8BD90A93229DDE24DB4B9A64 /* Pods-OTPViaWhatsappTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C667C59E8EF5D2994FFB46228A6F91 /* UpdateFactorPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FCF7B4BA131B331D165A1E3A8B4C4 /* UpdateFactorPayload.swift */; };
+		6317520F5CFE6CBD77F7BAB29CE00FEA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C18D6B798ACA03C43DDEA140BF293 /* Authentication.swift */; };
+		64ABE252DE0E2DAE8CDE272D3772AB02 /* Pods-OTPViaWhatsappTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3172E203FAFAE1C7A9DC10A2E82511DE /* Pods-OTPViaWhatsappTests-dummy.m */; };
+		6546928E9D9A301526131B5AC2E8BBE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6602F4C4477107876F8BAE52F2603DE5 /* DefaultLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1708AA8F3E31332F39899AF7C0000 /* DefaultLogger.swift */; };
+		68EF8F0FFE61CC46DBEEF8818F12C605 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D481836A4A44C1C3621C05BE8970E3C0 /* URLRequestBuilder.swift */; };
+		6BDE06F74F886C0A3B842C40B1F5CA35 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE25190551657250977A4A5C46B4FE5 /* KeyPair.swift */; };
+		6CC8DF71DFFC3BEA8CA6481D8987D8A1 /* Storage+AccessGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56972AB4375921D13BC3B2DDF389F6C /* Storage+AccessGroup.swift */; };
+		735E0179426F82E174CAB35CB0438040 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC7079598B9145A95A56E737EB509 /* Logger.swift */; };
+		75CA206A88C2E6EB0A5B254190D8AFA4 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4EDBA076BFC0A236688CFAE20BF0E0 /* Parameters.swift */; };
+		78DCADD90BF2BC1DD48080863216E7A1 /* FactorPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6441C03A4EB8827BF93277C37141C1F /* FactorPayload.swift */; };
+		7A37F5D17A1F4C93DAF3A69A71083244 /* ChallengeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10774C831329138824E1BF27F6B7C064 /* ChallengeAPIClient.swift */; };
+		7CE09BC1D4F7EAEA8281AD7540902184 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3C6937E3DE2E8DBFB6402EAF844A /* DateFormatter+Extensions.swift */; };
+		7D64488DA2769D0E8AFF3C495C48AD57 /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047954D4EB5AAC2484A6D69FA1F4573D /* BaseAPIClient.swift */; };
+		880F353E4751E274850079D10F66B92C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B3FD9FA01A35FEA1FE8B1E2781A1F /* APIConstants.swift */; };
+		8A732DCB7E1A2C7B1ECE9B7CF087F03A /* FactorDataPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D4957551FDF4F91F7AEDE23C19087D /* FactorDataPayload.swift */; };
+		94412AB99A020CFDF4D48DAAA46E078E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E24E399B5846483A4E30E8673AA918 /* Challenge.swift */; };
+		A841878587BB28D53FB25347442E9EC8 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF356CAAACC8AF97CE22AB1CD836436B /* Keychain.swift */; };
+		A8CD16A8146698824DF9E34A36FFF5B6 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D500F53B416CC49EC6756C6E79A7F959 /* MapperError.swift */; };
+		AB43B3F56434C7B4455F3ED674CEB12B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FEBB50F6A85A68FCBC6153FF572B6B /* StorageProvider.swift */; };
+		B07016AD2B8007445F3353D4AA86BDF5 /* OSLogWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E71AC32967DCD321023389B663A3EF /* OSLogWrapper.swift */; };
+		B1ACE7DE99630C071A8F67D0B9283BDA /* TwilioVerify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 284E234F92183A51D7155EEBE4462046 /* TwilioVerify-dummy.m */; };
+		B2E01DF623D25DF3912B67F49BE01C42 /* ChallengeListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70782C4433133FB69EC6AC90CABE2E /* ChallengeListMapper.swift */; };
+		B58D3A6824DF94B229DE7CD14F14DC44 /* ECSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BFB8E2B6588A883D1EF5A67D9B2D8 /* ECSigner.swift */; };
+		B6B0178DE1B96ED03413C2FA5EFD5F58 /* FactorChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FF3C3CC20E7519FCF3AE053F18F5F3 /* FactorChallenge.swift */; };
+		BC28B6A95BA2FC7992666E21A522E57A /* TwilioVerifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6601EBE06584F6310B90E1E7309DB2 /* TwilioVerifyError.swift */; };
+		BF2B89615511AE2FDABE51C9434FB341 /* PushFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E5BD59355EA6BD24924A8E4F9D8BE /* PushFactor.swift */; };
+		C473FA158528615C72A924541D170FF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C5AA2B7184C5A753068D3FA88AE6BA36 /* OperationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C024AA597D81498F232F5142100640 /* OperationErrors.swift */; };
+		C6328E3E209323787EE85EE6461F0EC7 /* JwtSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B1AD4DCD24EC6389E2A7215353029 /* JwtSigner.swift */; };
+		C878A5973279CD6B8D4F7D4B9140B20A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3509F619D499220CBD7953853ED6398 /* NetworkError.swift */; };
+		CB512B1E93B6C110FC75A6D2E9499E16 /* ChallengeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE288227EBE5047ADCCDA3E78B284C /* ChallengeRepository.swift */; };
+		CD741BA21BA7307EFEAF0F948208FDF1 /* NetworkProvider+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBADE4B50DB4BE3910B9AFB8A37529D /* NetworkProvider+Models.swift */; };
+		CEB12CCD653621CFDF7F255C5E370744 /* PushFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B1CB0E984430C7DAC8C910362F1247 /* PushFactory.swift */; };
+		D32E310E38A355AFC9FBECA29ECC5019 /* ChallengeFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21886242A904FF4AF9CEDEDE522296 /* ChallengeFacade.swift */; };
+		D5AA08736816D2B746216428DDD7EC87 /* VerifyFactorPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023746E10C39065EDFE730F30326D19A /* VerifyFactorPayload.swift */; };
+		DB4EF835B0D712FD07D8ED8D1D3280A8 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A85AE685FD7CE07A6BABD22CFBAE1 /* KeyManager.swift */; };
+		DD23208366B8F3465F1C983267B29638 /* TwilioVerifyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CF315CA192930D224542AAAF4EFC8 /* TwilioVerifyConfig.swift */; };
+		E3D2EE2AD483AA295B4E75028616E58D /* ChallengeListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E683414065E5F796FE08E953A556E9E /* ChallengeListDTO.swift */; };
+		E5AB9378244561A9BDA007CAE09C6394 /* ChallengeListPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597865649E4014596D1D82CE59E67266 /* ChallengeListPayload.swift */; };
+		ED6345C3DB8013531A44260C063D5C3E /* FactorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DE31E499F15069FF55ED6C5FBA41D /* FactorMapper.swift */; };
+		EE813E42575538E2627D6547E567E50D /* UpdateChallengePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D431B2EE679B185C7E4318038FC09E /* UpdateChallengePayload.swift */; };
+		EF9535B7DC32D2B07274D6F96795E97F /* StringInterpolation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA04F88D0A5F20E59772CE0E13B863F /* StringInterpolation+Extensions.swift */; };
+		F2FB72A999516FDC8BAFAAF06757EECB /* KeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE9EFDBBCF7FD228062C2DA78F324C5 /* KeyStorage.swift */; };
+		FAC6AD7E6A578677666D193656419571 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E3030DB32D66CD2066215A565A379 /* NetworkAdapter.swift */; };
+		FC24E7816D6A6139DED04E85C356C4D4 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B6E9BC6EBB0604E55EA34365296B72 /* Metadata.swift */; };
+		FE4DB2A913D4FA40EB0305F4B65DDE4E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F29FFBD9343C5C287969AD5F938D52 /* HTTPMethod.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0007180B81CF25351BB6874DA148A18D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9850155A3CF46354A6D482C894F42B43;
+			remoteInfo = TwilioSyncClient;
+		};
+		0443EC8AF066244C4C271A96D015DFFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B580861207E90FF7AF4257A61B108DD2;
+			remoteInfo = TwilioStateMachine;
+		};
+		14AFA3822AF82A3247BAFE0D496556AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9394AC08A5D77FAA613BD0D000318B56;
+			remoteInfo = TwilioVerify;
+		};
+		18A2C15544F35E067C08338B45AED4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9850155A3CF46354A6D482C894F42B43;
+			remoteInfo = TwilioSyncClient;
+		};
+		1A76DB006335E0E0D2ADD93BF100C65C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B580861207E90FF7AF4257A61B108DD2;
+			remoteInfo = TwilioStateMachine;
+		};
+		410648FF2C7C9A55C8B70C105B73C345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13720C82CBDD530272DF99EFEDA3C6CF;
+			remoteInfo = TwilioTwilsockLib;
+		};
+		4CC354C721D012E2E0794842A24716D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B580861207E90FF7AF4257A61B108DD2;
+			remoteInfo = TwilioStateMachine;
+		};
+		7E55B9798E27731BF74E75A40A606E67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E2F51DDC73137FD3E9DFCE3FA62C5C9;
+			remoteInfo = TwilioCommonLib;
+		};
+		86D185C304BD9D236D22731F1B275A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9394AC08A5D77FAA613BD0D000318B56;
+			remoteInfo = TwilioVerify;
+		};
+		A0ADE3B8C96CF8AFF1C385AD1A7590C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13720C82CBDD530272DF99EFEDA3C6CF;
+			remoteInfo = TwilioTwilsockLib;
+		};
+		AA9C79C51F976DA4C88273A0A66530D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 099AB5B16B8EC28C1081B28C1D111920;
+			remoteInfo = "Pods-OTPViaWhatsapp";
+		};
+		BDC676B8D03B5224B20E4EBFD68EC731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E2F51DDC73137FD3E9DFCE3FA62C5C9;
+			remoteInfo = TwilioCommonLib;
+		};
+		D397814016FFA756355B69BA3FAC8B68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13720C82CBDD530272DF99EFEDA3C6CF;
+			remoteInfo = TwilioTwilsockLib;
+		};
+		DD9445E0630E80ED7D95A63D51A5C0D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E2F51DDC73137FD3E9DFCE3FA62C5C9;
+			remoteInfo = TwilioCommonLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023746E10C39065EDFE730F30326D19A /* VerifyFactorPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifyFactorPayload.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/VerifyFactorPayload.swift; sourceTree = "<group>"; };
+		047954D4EB5AAC2484A6D69FA1F4573D /* BaseAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAPIClient.swift; path = TwilioVerifySDK/TwilioVerify/Sources/API/BaseAPIClient.swift; sourceTree = "<group>"; };
+		07AEBE90D28F72D4A33A8731EFD96983 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E683414065E5F796FE08E953A556E9E /* ChallengeListDTO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeListDTO.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/Models/DTO/ChallengeListDTO.swift; sourceTree = "<group>"; };
+		0F028C42F3770903893733953605882F /* TwilioStateMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioStateMachine.debug.xcconfig; sourceTree = "<group>"; };
+		10774C831329138824E1BF27F6B7C064 /* ChallengeAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeAPIClient.swift; path = TwilioVerifySDK/TwilioVerify/Sources/API/ChallengeAPIClient.swift; sourceTree = "<group>"; };
+		16223F60075E30306686E4C859BBAADD /* Pods-OTPViaWhatsappTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OTPViaWhatsappTests.modulemap"; sourceTree = "<group>"; };
+		181C02EEF7EA866C99DA26D587A5F829 /* TwilioTwilsockLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioTwilsockLib.debug.xcconfig; sourceTree = "<group>"; };
+		1D27C346BEBA40A5789D9D5DA624E424 /* Pods-OTPViaWhatsapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTPViaWhatsapp-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E7A92B5D995E033D88EB795DFF9DD0E /* TwilioSyncClient-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TwilioSyncClient-xcframeworks.sh"; sourceTree = "<group>"; };
+		2078329E8697C15576FFA8C0B59C1B83 /* TwilioStateMachine.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = TwilioStateMachine.xcframework; sourceTree = "<group>"; };
+		2144E427D1BF600AC6D5F870B0CA607A /* SecureStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureStorage.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Storage/SecureStorage.swift; sourceTree = "<group>"; };
+		24FEBB50F6A85A68FCBC6153FF572B6B /* StorageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageProvider.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Data/StorageProvider.swift; sourceTree = "<group>"; };
+		268EBEFFC1C74C267619BC57605F3E55 /* TwilioSyncClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioSyncClient.release.xcconfig; sourceTree = "<group>"; };
+		26B1CB0E984430C7DAC8C910362F1247 /* PushFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushFactory.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/PushFactory.swift; sourceTree = "<group>"; };
+		284E234F92183A51D7155EEBE4462046 /* TwilioVerify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TwilioVerify-dummy.m"; sourceTree = "<group>"; };
+		2B0BF902E2D63F477254682E7BDD67B7 /* ChallengeList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeList.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/ChallengeList.swift; sourceTree = "<group>"; };
+		2D5E06C28FBD562AB752632A928C85C8 /* FactorMigrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorMigrations.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/FactorMigrations.swift; sourceTree = "<group>"; };
+		2E21886242A904FF4AF9CEDEDE522296 /* ChallengeFacade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeFacade.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/ChallengeFacade.swift; sourceTree = "<group>"; };
+		2E88E66774B9CBD4D8A972EE656A509E /* TwilioVerify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioVerify.release.xcconfig; sourceTree = "<group>"; };
+		2F58D1A708B188F3A09AA8068749B9F2 /* PushChallengeProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushChallengeProcessor.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/PushChallengeProcessor.swift; sourceTree = "<group>"; };
+		2FB8CC4EF2B9C68C176962020275AC89 /* MediaType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaType.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/MediaType.swift; sourceTree = "<group>"; };
+		3169794829E4C97800BFE048F513490C /* Pods-OTPViaWhatsapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OTPViaWhatsapp-dummy.m"; sourceTree = "<group>"; };
+		3172E203FAFAE1C7A9DC10A2E82511DE /* Pods-OTPViaWhatsappTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OTPViaWhatsappTests-dummy.m"; sourceTree = "<group>"; };
+		32DFE5334042E3B08DB45B005DB59CC2 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-dummy.m"; sourceTree = "<group>"; };
+		334A3C6937E3DE2E8DBFB6402EAF844A /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Extensions.swift"; path = "TwilioVerifySDK/TwilioVerify/Sources/Extensions/DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		369551519325C25E866A74C417D6E365 /* Factor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Factor.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/Factor.swift; sourceTree = "<group>"; };
+		376B1B43647070CAF8780C3BD69370D9 /* TwilioSyncClient.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = TwilioSyncClient.xcframework; sourceTree = "<group>"; };
+		3BA125C445832F966CEA8FB350298E65 /* TwilioTwilsockLib-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TwilioTwilsockLib-xcframeworks.sh"; sourceTree = "<group>"; };
+		3DB8791092AB39B0AFFE8DCC719C094D /* Pods-OTPViaWhatsapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OTPViaWhatsapp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DBADE4B50DB4BE3910B9AFB8A37529D /* NetworkProvider+Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NetworkProvider+Models.swift"; path = "TwilioVerifySDK/TwilioVerify/Sources/Networking/NetworkProvider+Models.swift"; sourceTree = "<group>"; };
+		3F60189C60E9EED2204E19BA17239074 /* FactorAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorAPIClient.swift; path = TwilioVerifySDK/TwilioVerify/Sources/API/FactorAPIClient.swift; sourceTree = "<group>"; };
+		415E398AEC507D6FDCCDF3EF9CD1551E /* Pods-OTPViaWhatsappTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTPViaWhatsappTests-Info.plist"; sourceTree = "<group>"; };
+		423C206E6A20072B52585E178289ED6D /* TwilioVerify-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TwilioVerify-Info.plist"; sourceTree = "<group>"; };
+		4312410483994B03BD6DE09899D03B81 /* ECP256SignerTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECP256SignerTemplate.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Key/Template/ECP256SignerTemplate.swift; sourceTree = "<group>"; };
+		44997139BF21FD03D1BB8E8AF6304223 /* RequestHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestHelper.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/RequestHelper.swift; sourceTree = "<group>"; };
+		44CD6E79A9F09E8C8404945E3A902454 /* Pods-OTPViaWhatsapp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OTPViaWhatsapp.modulemap"; sourceTree = "<group>"; };
+		47D4957551FDF4F91F7AEDE23C19087D /* FactorDataPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorDataPayload.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/Models/FactorDataPayload.swift; sourceTree = "<group>"; };
+		4A8A18B1092C0F6E6D18AAAEE681CD8C /* Template.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Template.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Key/Template/Template.swift; sourceTree = "<group>"; };
+		4C53AF292A1369B3B36B831DCFC682F1 /* TwilioCommonLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioCommonLib.release.xcconfig; sourceTree = "<group>"; };
+		507CF315CA192930D224542AAAF4EFC8 /* TwilioVerifyConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwilioVerifyConfig.swift; path = TwilioVerifySDK/TwilioVerify/Sources/TwilioVerifyConfig.swift; sourceTree = "<group>"; };
+		50A829173904E36CE6A0D074DEDB8AE1 /* TwilioSyncClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioSyncClient.debug.xcconfig; sourceTree = "<group>"; };
+		50B52ABDD0D5FB67982833D9DA7637D6 /* TwilioVerify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwilioVerify.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Manager/TwilioVerify.swift; sourceTree = "<group>"; };
+		50E71AC32967DCD321023389B663A3EF /* OSLogWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSLogWrapper.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Logger/OSLogWrapper.swift; sourceTree = "<group>"; };
+		597865649E4014596D1D82CE59E67266 /* ChallengeListPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeListPayload.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/ChallengeListPayload.swift; sourceTree = "<group>"; };
+		5ACCC7079598B9145A95A56E737EB509 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Logger/Logger.swift; sourceTree = "<group>"; };
+		5AE25190551657250977A4A5C46B4FE5 /* KeyPair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyPair.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Key/KeyPair.swift; sourceTree = "<group>"; };
+		5C87115652F1BE41399FC53DBEDB9F25 /* Pods-OTPViaWhatsapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OTPViaWhatsapp-frameworks.sh"; sourceTree = "<group>"; };
+		5D19587FB24EE101F18680F2F08133E4 /* TwilioStateMachine-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TwilioStateMachine-xcframeworks.sh"; sourceTree = "<group>"; };
+		5E7BFB8E2B6588A883D1EF5A67D9B2D8 /* ECSigner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECSigner.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Key/Signer/ECSigner.swift; sourceTree = "<group>"; };
+		5EA04F88D0A5F20E59772CE0E13B863F /* StringInterpolation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringInterpolation+Extensions.swift"; path = "TwilioVerifySDK/TwilioVerify/Sources/Extensions/StringInterpolation+Extensions.swift"; sourceTree = "<group>"; };
+		61748ED13CDF7F904FA8DDA5BD6E0EF8 /* JwtGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JwtGenerator.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Data/JWT/JwtGenerator.swift; sourceTree = "<group>"; };
+		675B3FD9FA01A35FEA1FE8B1E2781A1F /* APIConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = TwilioVerifySDK/TwilioVerify/Sources/API/APIConstants.swift; sourceTree = "<group>"; };
+		68D9AA06675FB9C2695CC94D30EE35AF /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6B821870A38FFA6E8514A07C864C604C /* TwilioVerify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioVerify.debug.xcconfig; sourceTree = "<group>"; };
+		6EEDEA65A3EC7E27FAA2ADEFBF18E5A4 /* TwilioCommonLib-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TwilioCommonLib-xcframeworks.sh"; sourceTree = "<group>"; };
+		6FE831140BEBA773EED222DEB5406EC3 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Data/Migration.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		795DE31E499F15069FF55ED6C5FBA41D /* FactorMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorMapper.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/FactorMapper.swift; sourceTree = "<group>"; };
+		7A5FCF7B4BA131B331D165A1E3A8B4C4 /* UpdateFactorPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateFactorPayload.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/UpdateFactorPayload.swift; sourceTree = "<group>"; };
+		7BAFE5912720D7FA0180E412D70743F1 /* TwilioCommonLib.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = TwilioCommonLib.xcframework; sourceTree = "<group>"; };
+		7DBE2E477E9F27ED08D5E5E15878B7DA /* Pods-OTPViaWhatsapp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OTPViaWhatsapp-umbrella.h"; sourceTree = "<group>"; };
+		7E2104408B7AFD99CF39FA05A5FC6066 /* TwilioVerifyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwilioVerifyManager.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Manager/TwilioVerifyManager.swift; sourceTree = "<group>"; };
+		835563F8BAB882B592CA996F40C198DD /* Pods-OTPViaWhatsapp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OTPViaWhatsapp"; path = Pods_OTPViaWhatsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8683E3D523CF2B5D08CF5DFE8A0ACE5F /* ChallengeDTO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeDTO.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/Models/DTO/ChallengeDTO.swift; sourceTree = "<group>"; };
+		88D431B2EE679B185C7E4318038FC09E /* UpdateChallengePayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateChallengePayload.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/UpdateChallengePayload.swift; sourceTree = "<group>"; };
+		8A5DDED670C77552767BC9107E228E0C /* Pods-OTPViaWhatsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTPViaWhatsapp.release.xcconfig"; sourceTree = "<group>"; };
+		8A900D12F7294D905CC43EEB05A6D38C /* TwilioStateMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioStateMachine.release.xcconfig; sourceTree = "<group>"; };
+		8AF1708AA8F3E31332F39899AF7C0000 /* DefaultLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultLogger.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Logger/DefaultLogger.swift; sourceTree = "<group>"; };
+		8B2B1AD4DCD24EC6389E2A7215353029 /* JwtSigner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JwtSigner.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Data/JWT/JwtSigner.swift; sourceTree = "<group>"; };
+		8F9E3030DB32D66CD2066215A565A379 /* NetworkAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkAdapter.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/NetworkAdapter.swift; sourceTree = "<group>"; };
+		90FC45A1033ECF18D34F61F93AC2B2DB /* TwilioVerify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TwilioVerify-umbrella.h"; sourceTree = "<group>"; };
+		910975F2BEAFECBF5C2D0255292AD2E9 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92C83F0C044AB47C7B9993DD97A5A7B7 /* Pods-OTPViaWhatsappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTPViaWhatsappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		947A2FF33B9755810C63376F13F08B15 /* KeychainQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainQuery.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Keychain/KeychainQuery.swift; sourceTree = "<group>"; };
+		94EF876EB89F8D69A6E71E042582E7BD /* ChallengeMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeMapper.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/ChallengeMapper.swift; sourceTree = "<group>"; };
+		98F16FED2015D26C1105BC8C419DEE91 /* Pods-OTPViaWhatsapp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTPViaWhatsapp-Info.plist"; sourceTree = "<group>"; };
+		9C3A85AE685FD7CE07A6BABD22CFBAE1 /* KeyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyManager.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Keychain/KeyManager.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DC32AFF6D5CAC5DE3316218038F6A09 /* TwilioVerify */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TwilioVerify; path = TwilioVerifySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00E68D6230F380CC3D57DE136E37D26 /* TwilioVerify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TwilioVerify.modulemap; sourceTree = "<group>"; };
+		A06CB1AC3BBB2DEC9D2E3432368CAC6E /* Pods-OTPViaWhatsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTPViaWhatsapp.debug.xcconfig"; sourceTree = "<group>"; };
+		A121D204B9274F41829E7D536AFCF6A0 /* PushFactorDTO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushFactorDTO.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/Models/DTOs/PushFactorDTO.swift; sourceTree = "<group>"; };
+		A36828F9241D9E5CAADCADF0276EB820 /* TwilioCommonLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioCommonLib.debug.xcconfig; sourceTree = "<group>"; };
+		A56972AB4375921D13BC3B2DDF389F6C /* Storage+AccessGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+AccessGroup.swift"; path = "TwilioVerifySDK/TwilioVerify/Sources/Data/Storage+AccessGroup.swift"; sourceTree = "<group>"; };
+		A56D60535E079C6175272267323D6029 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-umbrella.h"; sourceTree = "<group>"; };
+		A580A963D42517E80F2A7625C3D4DD19 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests"; path = Pods_OTPViaWhatsapp_OTPViaWhatsappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B018052E06C754BCDE393FF7ED85582C /* TwilioTwilsockLib.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = TwilioTwilsockLib.xcframework; sourceTree = "<group>"; };
+		B0C05EAF86121DAE72AE6BADE3CD45DE /* FactorRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorRepository.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/FactorRepository.swift; sourceTree = "<group>"; };
+		B0FF3C3CC20E7519FCF3AE053F18F5F3 /* FactorChallenge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorChallenge.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/Models/FactorChallenge.swift; sourceTree = "<group>"; };
+		B2E24E399B5846483A4E30E8673AA918 /* Challenge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Challenge.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/Challenge.swift; sourceTree = "<group>"; };
+		BA4C37E3C1174A698E162A18F8ACE408 /* TwilioVerify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TwilioVerify-prefix.pch"; sourceTree = "<group>"; };
+		BBC0B009BD17B467A21B3327426ABBE1 /* DateProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateProvider.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Data/DateProvider.swift; sourceTree = "<group>"; };
+		C1C024AA597D81498F232F5142100640 /* OperationErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationErrors.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Errors/OperationErrors.swift; sourceTree = "<group>"; };
+		C6441C03A4EB8827BF93277C37141C1F /* FactorPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorPayload.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/FactorPayload.swift; sourceTree = "<group>"; };
+		C91C18D6B798ACA03C43DDEA140BF293 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/Authentication.swift; sourceTree = "<group>"; };
+		CBE8C940B1299E3C441AB8EDBFE03E78 /* BasicAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicAuthorization.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/BasicAuthorization.swift; sourceTree = "<group>"; };
+		D25E5BD59355EA6BD24924A8E4F9D8BE /* PushFactor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushFactor.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/Models/PushFactor.swift; sourceTree = "<group>"; };
+		D481836A4A44C1C3621C05BE8970E3C0 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequestBuilder.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/URLRequestBuilder.swift; sourceTree = "<group>"; };
+		D4F29FFBD9343C5C287969AD5F938D52 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/HTTPMethod.swift; sourceTree = "<group>"; };
+		D500F53B416CC49EC6756C6E79A7F959 /* MapperError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapperError.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/MapperError.swift; sourceTree = "<group>"; };
+		D893DB9539779A2BE88DE62932CC6E46 /* Pods-OTPViaWhatsappTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OTPViaWhatsappTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA6601EBE06584F6310B90E1E7309DB2 /* TwilioVerifyError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwilioVerifyError.swift; path = TwilioVerifySDK/TwilioVerify/Sources/TwilioVerifyError.swift; sourceTree = "<group>"; };
+		DC8C86DD8BD90A93229DDE24DB4B9A64 /* Pods-OTPViaWhatsappTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OTPViaWhatsappTests-umbrella.h"; sourceTree = "<group>"; };
+		DCD2651A5CB78461AE8DD39F125B5F7B /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF2E454AEEE59FC5FB67EB652BCABDC4 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E1CFC4AD8574B3E1B2EDEAF13B49AA07 /* Pods-OTPViaWhatsappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTPViaWhatsappTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1FE288227EBE5047ADCCDA3E78B284C /* ChallengeRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeRepository.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/ChallengeRepository.swift; sourceTree = "<group>"; };
+		E3509F619D499220CBD7953853ED6398 /* NetworkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Errors/NetworkError.swift; sourceTree = "<group>"; };
+		E364FADB5614C66CFCA41359879F3330 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/HTTPHeaders.swift; sourceTree = "<group>"; };
+		E58B4F7838A4665BF59D8B985980F804 /* Pods-OTPViaWhatsappTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTPViaWhatsappTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E6B6E9BC6EBB0604E55EA34365296B72 /* Metadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Models/Metadata.swift; sourceTree = "<group>"; };
+		ED4EDBA076BFC0A236688CFAE20BF0E0 /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Networking/Parameters.swift; sourceTree = "<group>"; };
+		EE70782C4433133FB69EC6AC90CABE2E /* ChallengeListMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeListMapper.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Challenge/ChallengeListMapper.swift; sourceTree = "<group>"; };
+		EEE9EFDBBCF7FD228062C2DA78F324C5 /* KeyStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyStorage.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Data/KeyStorage.swift; sourceTree = "<group>"; };
+		EF356CAAACC8AF97CE22AB1CD836436B /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = TwilioVerifySDK/TwilioSecurity/Sources/Keychain/Keychain.swift; sourceTree = "<group>"; };
+		F63BEB9B3A2F513847CC2DF30CB62C63 /* TwilioTwilsockLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwilioTwilsockLib.release.xcconfig; sourceTree = "<group>"; };
+		F63E4BAAF99E2B02FF8EA488B39B053E /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Data/Storage.swift; sourceTree = "<group>"; };
+		F6C717A884EBB10FF267B3EB1EE7A24D /* FactorFacade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactorFacade.swift; path = TwilioVerifySDK/TwilioVerify/Sources/Domain/Factor/FactorFacade.swift; sourceTree = "<group>"; };
+		F7B28DF825532378566E3B57852A9878 /* Pods-OTPViaWhatsappTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OTPViaWhatsappTests"; path = Pods_OTPViaWhatsappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9064CCC0599FFBF5CF2F8EB89C31617 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.modulemap"; sourceTree = "<group>"; };
+		FB6A345C2A0E1E819AE2169EDB6F8DB6 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53AF540D0368799F83F57B512B6EB042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6F901CDD129B9C02B4D0CF24978350 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64744FDAEFFB1E634A3924C26FC17BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6546928E9D9A301526131B5AC2E8BBE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEF140B93CCD608D11361E446691B71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C473FA158528615C72A924541D170FF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9EBBA45C7D865F756666D018722CC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070E82DC29FC6B4B083639F2283F4612 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00134F0BB068ED7E91E837275129824B /* TwilioTwilsockLib */ = {
+			isa = PBXGroup;
+			children = (
+				B19894CFBF1A0D18689DAAD2030ED812 /* Frameworks */,
+				E4DF7EE45E48188EB56C4BFB83AFD3EC /* Support Files */,
+			);
+			name = TwilioTwilsockLib;
+			path = TwilioTwilsockLib;
+			sourceTree = "<group>";
+		};
+		025936E924DBB21BF55DDDAF5B37E193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				835563F8BAB882B592CA996F40C198DD /* Pods-OTPViaWhatsapp */,
+				A580A963D42517E80F2A7625C3D4DD19 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests */,
+				F7B28DF825532378566E3B57852A9878 /* Pods-OTPViaWhatsappTests */,
+				9DC32AFF6D5CAC5DE3316218038F6A09 /* TwilioVerify */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EC473B2F9B8B8B08CA18119FB74F074 /* TwilioSyncClient */ = {
+			isa = PBXGroup;
+			children = (
+				5348B4D361528795BF4AA81E79D82AA4 /* Frameworks */,
+				6CAF1B4E04194915E967C54286F906B5 /* Support Files */,
+			);
+			name = TwilioSyncClient;
+			path = TwilioSyncClient;
+			sourceTree = "<group>";
+		};
+		16E728C7E03897E9E191A00F9C363C57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94E688801E62F90B7A6BAFAA154EECAA /* TwilioCommonLib */,
+				84CC6B82790B56E8BEAA5E07C745586F /* TwilioStateMachine */,
+				0EC473B2F9B8B8B08CA18119FB74F074 /* TwilioSyncClient */,
+				00134F0BB068ED7E91E837275129824B /* TwilioTwilsockLib */,
+				ACC9D7D714B198F6AA2FBBBD4962DA2B /* TwilioVerify */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		21FAE63E8F683E582B92681EF9AC7B79 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A00E68D6230F380CC3D57DE136E37D26 /* TwilioVerify.modulemap */,
+				284E234F92183A51D7155EEBE4462046 /* TwilioVerify-dummy.m */,
+				423C206E6A20072B52585E178289ED6D /* TwilioVerify-Info.plist */,
+				BA4C37E3C1174A698E162A18F8ACE408 /* TwilioVerify-prefix.pch */,
+				90FC45A1033ECF18D34F61F93AC2B2DB /* TwilioVerify-umbrella.h */,
+				6B821870A38FFA6E8514A07C864C604C /* TwilioVerify.debug.xcconfig */,
+				2E88E66774B9CBD4D8A972EE656A509E /* TwilioVerify.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TwilioVerify";
+			sourceTree = "<group>";
+		};
+		32B415365D9C4BBEDFDD90FE58C8D9CB /* Pods-OTPViaWhatsapp */ = {
+			isa = PBXGroup;
+			children = (
+				44CD6E79A9F09E8C8404945E3A902454 /* Pods-OTPViaWhatsapp.modulemap */,
+				3DB8791092AB39B0AFFE8DCC719C094D /* Pods-OTPViaWhatsapp-acknowledgements.markdown */,
+				1D27C346BEBA40A5789D9D5DA624E424 /* Pods-OTPViaWhatsapp-acknowledgements.plist */,
+				3169794829E4C97800BFE048F513490C /* Pods-OTPViaWhatsapp-dummy.m */,
+				5C87115652F1BE41399FC53DBEDB9F25 /* Pods-OTPViaWhatsapp-frameworks.sh */,
+				98F16FED2015D26C1105BC8C419DEE91 /* Pods-OTPViaWhatsapp-Info.plist */,
+				7DBE2E477E9F27ED08D5E5E15878B7DA /* Pods-OTPViaWhatsapp-umbrella.h */,
+				A06CB1AC3BBB2DEC9D2E3432368CAC6E /* Pods-OTPViaWhatsapp.debug.xcconfig */,
+				8A5DDED670C77552767BC9107E228E0C /* Pods-OTPViaWhatsapp.release.xcconfig */,
+			);
+			name = "Pods-OTPViaWhatsapp";
+			path = "Target Support Files/Pods-OTPViaWhatsapp";
+			sourceTree = "<group>";
+		};
+		3D11E3073AB06F1CFE5AF234DF5E31BE /* Pods-OTPViaWhatsappTests */ = {
+			isa = PBXGroup;
+			children = (
+				16223F60075E30306686E4C859BBAADD /* Pods-OTPViaWhatsappTests.modulemap */,
+				D893DB9539779A2BE88DE62932CC6E46 /* Pods-OTPViaWhatsappTests-acknowledgements.markdown */,
+				E58B4F7838A4665BF59D8B985980F804 /* Pods-OTPViaWhatsappTests-acknowledgements.plist */,
+				3172E203FAFAE1C7A9DC10A2E82511DE /* Pods-OTPViaWhatsappTests-dummy.m */,
+				415E398AEC507D6FDCCDF3EF9CD1551E /* Pods-OTPViaWhatsappTests-Info.plist */,
+				DC8C86DD8BD90A93229DDE24DB4B9A64 /* Pods-OTPViaWhatsappTests-umbrella.h */,
+				92C83F0C044AB47C7B9993DD97A5A7B7 /* Pods-OTPViaWhatsappTests.debug.xcconfig */,
+				E1CFC4AD8574B3E1B2EDEAF13B49AA07 /* Pods-OTPViaWhatsappTests.release.xcconfig */,
+			);
+			name = "Pods-OTPViaWhatsappTests";
+			path = "Target Support Files/Pods-OTPViaWhatsappTests";
+			sourceTree = "<group>";
+		};
+		47DA0D25CC128D58EB333D1134B7832F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D19587FB24EE101F18680F2F08133E4 /* TwilioStateMachine-xcframeworks.sh */,
+				0F028C42F3770903893733953605882F /* TwilioStateMachine.debug.xcconfig */,
+				8A900D12F7294D905CC43EEB05A6D38C /* TwilioStateMachine.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TwilioStateMachine";
+			sourceTree = "<group>";
+		};
+		4C32D1E38267016B6138F7C74EAD44AC /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9064CCC0599FFBF5CF2F8EB89C31617 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.modulemap */,
+				07AEBE90D28F72D4A33A8731EFD96983 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-acknowledgements.markdown */,
+				DF2E454AEEE59FC5FB67EB652BCABDC4 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-acknowledgements.plist */,
+				32DFE5334042E3B08DB45B005DB59CC2 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-dummy.m */,
+				68D9AA06675FB9C2695CC94D30EE35AF /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-frameworks.sh */,
+				FB6A345C2A0E1E819AE2169EDB6F8DB6 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-Info.plist */,
+				A56D60535E079C6175272267323D6029 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-umbrella.h */,
+				910975F2BEAFECBF5C2D0255292AD2E9 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig */,
+				DCD2651A5CB78461AE8DD39F125B5F7B /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig */,
+			);
+			name = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests";
+			path = "Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests";
+			sourceTree = "<group>";
+		};
+		5348B4D361528795BF4AA81E79D82AA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376B1B43647070CAF8780C3BD69370D9 /* TwilioSyncClient.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5EBA46ED9B4D9861ACAC119144B9DBEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EEDEA65A3EC7E27FAA2ADEFBF18E5A4 /* TwilioCommonLib-xcframeworks.sh */,
+				A36828F9241D9E5CAADCADF0276EB820 /* TwilioCommonLib.debug.xcconfig */,
+				4C53AF292A1369B3B36B831DCFC682F1 /* TwilioCommonLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TwilioCommonLib";
+			sourceTree = "<group>";
+		};
+		605A6CC81B06225072839590DEB2907A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2078329E8697C15576FFA8C0B59C1B83 /* TwilioStateMachine.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		678BE569884620CE6F1483AAB56D942D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32B415365D9C4BBEDFDD90FE58C8D9CB /* Pods-OTPViaWhatsapp */,
+				4C32D1E38267016B6138F7C74EAD44AC /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests */,
+				3D11E3073AB06F1CFE5AF234DF5E31BE /* Pods-OTPViaWhatsappTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		69C9FDE73083E016FAD5557ACD0CF01E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BAFE5912720D7FA0180E412D70743F1 /* TwilioCommonLib.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CAF1B4E04194915E967C54286F906B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E7A92B5D995E033D88EB795DFF9DD0E /* TwilioSyncClient-xcframeworks.sh */,
+				50A829173904E36CE6A0D074DEDB8AE1 /* TwilioSyncClient.debug.xcconfig */,
+				268EBEFFC1C74C267619BC57605F3E55 /* TwilioSyncClient.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TwilioSyncClient";
+			sourceTree = "<group>";
+		};
+		84CC6B82790B56E8BEAA5E07C745586F /* TwilioStateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				605A6CC81B06225072839590DEB2907A /* Frameworks */,
+				47DA0D25CC128D58EB333D1134B7832F /* Support Files */,
+			);
+			name = TwilioStateMachine;
+			path = TwilioStateMachine;
+			sourceTree = "<group>";
+		};
+		94E688801E62F90B7A6BAFAA154EECAA /* TwilioCommonLib */ = {
+			isa = PBXGroup;
+			children = (
+				69C9FDE73083E016FAD5557ACD0CF01E /* Frameworks */,
+				5EBA46ED9B4D9861ACAC119144B9DBEE /* Support Files */,
+			);
+			name = TwilioCommonLib;
+			path = TwilioCommonLib;
+			sourceTree = "<group>";
+		};
+		ACC9D7D714B198F6AA2FBBBD4962DA2B /* TwilioVerify */ = {
+			isa = PBXGroup;
+			children = (
+				675B3FD9FA01A35FEA1FE8B1E2781A1F /* APIConstants.swift */,
+				C91C18D6B798ACA03C43DDEA140BF293 /* Authentication.swift */,
+				047954D4EB5AAC2484A6D69FA1F4573D /* BaseAPIClient.swift */,
+				CBE8C940B1299E3C441AB8EDBFE03E78 /* BasicAuthorization.swift */,
+				B2E24E399B5846483A4E30E8673AA918 /* Challenge.swift */,
+				10774C831329138824E1BF27F6B7C064 /* ChallengeAPIClient.swift */,
+				8683E3D523CF2B5D08CF5DFE8A0ACE5F /* ChallengeDTO.swift */,
+				2E21886242A904FF4AF9CEDEDE522296 /* ChallengeFacade.swift */,
+				2B0BF902E2D63F477254682E7BDD67B7 /* ChallengeList.swift */,
+				0E683414065E5F796FE08E953A556E9E /* ChallengeListDTO.swift */,
+				EE70782C4433133FB69EC6AC90CABE2E /* ChallengeListMapper.swift */,
+				597865649E4014596D1D82CE59E67266 /* ChallengeListPayload.swift */,
+				94EF876EB89F8D69A6E71E042582E7BD /* ChallengeMapper.swift */,
+				E1FE288227EBE5047ADCCDA3E78B284C /* ChallengeRepository.swift */,
+				334A3C6937E3DE2E8DBFB6402EAF844A /* DateFormatter+Extensions.swift */,
+				BBC0B009BD17B467A21B3327426ABBE1 /* DateProvider.swift */,
+				8AF1708AA8F3E31332F39899AF7C0000 /* DefaultLogger.swift */,
+				4312410483994B03BD6DE09899D03B81 /* ECP256SignerTemplate.swift */,
+				5E7BFB8E2B6588A883D1EF5A67D9B2D8 /* ECSigner.swift */,
+				369551519325C25E866A74C417D6E365 /* Factor.swift */,
+				3F60189C60E9EED2204E19BA17239074 /* FactorAPIClient.swift */,
+				B0FF3C3CC20E7519FCF3AE053F18F5F3 /* FactorChallenge.swift */,
+				47D4957551FDF4F91F7AEDE23C19087D /* FactorDataPayload.swift */,
+				F6C717A884EBB10FF267B3EB1EE7A24D /* FactorFacade.swift */,
+				795DE31E499F15069FF55ED6C5FBA41D /* FactorMapper.swift */,
+				2D5E06C28FBD562AB752632A928C85C8 /* FactorMigrations.swift */,
+				C6441C03A4EB8827BF93277C37141C1F /* FactorPayload.swift */,
+				B0C05EAF86121DAE72AE6BADE3CD45DE /* FactorRepository.swift */,
+				E364FADB5614C66CFCA41359879F3330 /* HTTPHeaders.swift */,
+				D4F29FFBD9343C5C287969AD5F938D52 /* HTTPMethod.swift */,
+				61748ED13CDF7F904FA8DDA5BD6E0EF8 /* JwtGenerator.swift */,
+				8B2B1AD4DCD24EC6389E2A7215353029 /* JwtSigner.swift */,
+				EF356CAAACC8AF97CE22AB1CD836436B /* Keychain.swift */,
+				947A2FF33B9755810C63376F13F08B15 /* KeychainQuery.swift */,
+				9C3A85AE685FD7CE07A6BABD22CFBAE1 /* KeyManager.swift */,
+				5AE25190551657250977A4A5C46B4FE5 /* KeyPair.swift */,
+				EEE9EFDBBCF7FD228062C2DA78F324C5 /* KeyStorage.swift */,
+				5ACCC7079598B9145A95A56E737EB509 /* Logger.swift */,
+				D500F53B416CC49EC6756C6E79A7F959 /* MapperError.swift */,
+				2FB8CC4EF2B9C68C176962020275AC89 /* MediaType.swift */,
+				E6B6E9BC6EBB0604E55EA34365296B72 /* Metadata.swift */,
+				6FE831140BEBA773EED222DEB5406EC3 /* Migration.swift */,
+				8F9E3030DB32D66CD2066215A565A379 /* NetworkAdapter.swift */,
+				E3509F619D499220CBD7953853ED6398 /* NetworkError.swift */,
+				3DBADE4B50DB4BE3910B9AFB8A37529D /* NetworkProvider+Models.swift */,
+				C1C024AA597D81498F232F5142100640 /* OperationErrors.swift */,
+				50E71AC32967DCD321023389B663A3EF /* OSLogWrapper.swift */,
+				ED4EDBA076BFC0A236688CFAE20BF0E0 /* Parameters.swift */,
+				2F58D1A708B188F3A09AA8068749B9F2 /* PushChallengeProcessor.swift */,
+				D25E5BD59355EA6BD24924A8E4F9D8BE /* PushFactor.swift */,
+				A121D204B9274F41829E7D536AFCF6A0 /* PushFactorDTO.swift */,
+				26B1CB0E984430C7DAC8C910362F1247 /* PushFactory.swift */,
+				44997139BF21FD03D1BB8E8AF6304223 /* RequestHelper.swift */,
+				2144E427D1BF600AC6D5F870B0CA607A /* SecureStorage.swift */,
+				F63E4BAAF99E2B02FF8EA488B39B053E /* Storage.swift */,
+				A56972AB4375921D13BC3B2DDF389F6C /* Storage+AccessGroup.swift */,
+				24FEBB50F6A85A68FCBC6153FF572B6B /* StorageProvider.swift */,
+				5EA04F88D0A5F20E59772CE0E13B863F /* StringInterpolation+Extensions.swift */,
+				4A8A18B1092C0F6E6D18AAAEE681CD8C /* Template.swift */,
+				50B52ABDD0D5FB67982833D9DA7637D6 /* TwilioVerify.swift */,
+				507CF315CA192930D224542AAAF4EFC8 /* TwilioVerifyConfig.swift */,
+				DA6601EBE06584F6310B90E1E7309DB2 /* TwilioVerifyError.swift */,
+				7E2104408B7AFD99CF39FA05A5FC6066 /* TwilioVerifyManager.swift */,
+				88D431B2EE679B185C7E4318038FC09E /* UpdateChallengePayload.swift */,
+				7A5FCF7B4BA131B331D165A1E3A8B4C4 /* UpdateFactorPayload.swift */,
+				D481836A4A44C1C3621C05BE8970E3C0 /* URLRequestBuilder.swift */,
+				023746E10C39065EDFE730F30326D19A /* VerifyFactorPayload.swift */,
+				21FAE63E8F683E582B92681EF9AC7B79 /* Support Files */,
+			);
+			name = TwilioVerify;
+			path = TwilioVerify;
+			sourceTree = "<group>";
+		};
+		B19894CFBF1A0D18689DAAD2030ED812 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B018052E06C754BCDE393FF7ED85582C /* TwilioTwilsockLib.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				16E728C7E03897E9E191A00F9C363C57 /* Pods */,
+				025936E924DBB21BF55DDDAF5B37E193 /* Products */,
+				678BE569884620CE6F1483AAB56D942D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4DF7EE45E48188EB56C4BFB83AFD3EC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BA125C445832F966CEA8FB350298E65 /* TwilioTwilsockLib-xcframeworks.sh */,
+				181C02EEF7EA866C99DA26D587A5F829 /* TwilioTwilsockLib.debug.xcconfig */,
+				F63BEB9B3A2F513847CC2DF30CB62C63 /* TwilioTwilsockLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TwilioTwilsockLib";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C2FE375BE3C796C1297CE08920ACE9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B3A2F6AD3DAEB1202ACE9FD204C177 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57C8BB43D1AFEA3E1DCCE17E6F2537F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D3B62585C139AD7A341457B23AA6F88 /* Pods-OTPViaWhatsappTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE0557DBADD0218B30F2BBB59C67129 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1539C8A3DEE94492D549C8DB01D0BF7A /* TwilioVerify-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDB4C01D15F1B86E14FA61A7CA45E91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A6965F2A7F279014C2C3676B494B7C /* Pods-OTPViaWhatsapp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		099AB5B16B8EC28C1081B28C1D111920 /* Pods-OTPViaWhatsapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327C7663772B9B6FCC3D44A4CDA3BC9C /* Build configuration list for PBXNativeTarget "Pods-OTPViaWhatsapp" */;
+			buildPhases = (
+				CEDB4C01D15F1B86E14FA61A7CA45E91 /* Headers */,
+				E20EB59B4407EB13963D63FEA8F136BB /* Sources */,
+				CE9EBBA45C7D865F756666D018722CC5 /* Frameworks */,
+				72AF52DF00EEC72C6F3C8489CB0BD337 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A4299B49AFA0CA7396E41EFA3416C09 /* PBXTargetDependency */,
+				C75130629EE35823111ACD7D4CA00ED6 /* PBXTargetDependency */,
+				BA2DC67970EAB98A2255B8BE51375D31 /* PBXTargetDependency */,
+				EB7F83F6DE57118A2BA1546F4F389995 /* PBXTargetDependency */,
+				D170E9538FE4C8E10BF3AD1D1F1D717F /* PBXTargetDependency */,
+			);
+			name = "Pods-OTPViaWhatsapp";
+			productName = Pods_OTPViaWhatsapp;
+			productReference = 835563F8BAB882B592CA996F40C198DD /* Pods-OTPViaWhatsapp */;
+			productType = "com.apple.product-type.framework";
+		};
+		5FFCA3C36C8B53E4FAAB6FD437D29E23 /* Pods-OTPViaWhatsappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E9D461EA74C0110FB76CF4E65CACB9 /* Build configuration list for PBXNativeTarget "Pods-OTPViaWhatsappTests" */;
+			buildPhases = (
+				57C8BB43D1AFEA3E1DCCE17E6F2537F8 /* Headers */,
+				9641E3314F2D38904B9D5B134B25B802 /* Sources */,
+				64744FDAEFFB1E634A3924C26FC17BDA /* Frameworks */,
+				7D575EF98D97F55DA80A60E8C8372B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E04BE174841C6246E50BB1543A269E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-OTPViaWhatsappTests";
+			productName = Pods_OTPViaWhatsappTests;
+			productReference = F7B28DF825532378566E3B57852A9878 /* Pods-OTPViaWhatsappTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		9394AC08A5D77FAA613BD0D000318B56 /* TwilioVerify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FBA4821E123E88F91F1A7B32A7A33D /* Build configuration list for PBXNativeTarget "TwilioVerify" */;
+			buildPhases = (
+				9AE0557DBADD0218B30F2BBB59C67129 /* Headers */,
+				5942677916A47E2C3D335DF09008002B /* Sources */,
+				53AF540D0368799F83F57B512B6EB042 /* Frameworks */,
+				7CA2376C2C4A5316FA1A450F2294E79D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwilioVerify;
+			productName = TwilioVerifySDK;
+			productReference = 9DC32AFF6D5CAC5DE3316218038F6A09 /* TwilioVerify */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3FAF2993266B6BB27F349F0C48278EC /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E0EA871E46CC4D589FBFFB51AB28120 /* Build configuration list for PBXNativeTarget "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests" */;
+			buildPhases = (
+				4C2FE375BE3C796C1297CE08920ACE9E /* Headers */,
+				E653D18E5806CE0EB5AD4379DBA300BD /* Sources */,
+				6DEF140B93CCD608D11361E446691B71 /* Frameworks */,
+				7D261AB4A64891ED905DE8A9448C8C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E5AD7C59558FB9812476F966ACD0482 /* PBXTargetDependency */,
+				4FC6AB631301A0F97AD4D3E973D120C6 /* PBXTargetDependency */,
+				3C73741C83505F134090EE17DD887214 /* PBXTargetDependency */,
+				261065F6546CF222021ECFF689AD6FB8 /* PBXTargetDependency */,
+				E96BD76CBEF4FB8BF70549DE58B5231A /* PBXTargetDependency */,
+			);
+			name = "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests";
+			productName = Pods_OTPViaWhatsapp_OTPViaWhatsappUITests;
+			productReference = A580A963D42517E80F2A7625C3D4DD19 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 025936E924DBB21BF55DDDAF5B37E193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				099AB5B16B8EC28C1081B28C1D111920 /* Pods-OTPViaWhatsapp */,
+				B3FAF2993266B6BB27F349F0C48278EC /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests */,
+				5FFCA3C36C8B53E4FAAB6FD437D29E23 /* Pods-OTPViaWhatsappTests */,
+				4E2F51DDC73137FD3E9DFCE3FA62C5C9 /* TwilioCommonLib */,
+				B580861207E90FF7AF4257A61B108DD2 /* TwilioStateMachine */,
+				9850155A3CF46354A6D482C894F42B43 /* TwilioSyncClient */,
+				13720C82CBDD530272DF99EFEDA3C6CF /* TwilioTwilsockLib */,
+				9394AC08A5D77FAA613BD0D000318B56 /* TwilioVerify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72AF52DF00EEC72C6F3C8489CB0BD337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA2376C2C4A5316FA1A450F2294E79D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D261AB4A64891ED905DE8A9448C8C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D575EF98D97F55DA80A60E8C8372B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11EB622F8861AD7C549D4E269808826C /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioCommonLib/TwilioCommonLib-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioCommonLib/TwilioCommonLib-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/TwilioCommonLib/TwilioCommonLib-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B663BF06A2A43CD96299DBF600EA884 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioSyncClient/TwilioSyncClient-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioSyncClient/TwilioSyncClient-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/TwilioSyncClient/TwilioSyncClient-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A624F1436F95789FD91277E60D5BD07 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioTwilsockLib/TwilioTwilsockLib-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioTwilsockLib/TwilioTwilsockLib-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/TwilioTwilsockLib/TwilioTwilsockLib-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BDAD1CEE3B306D2820B0F78649D1192 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioStateMachine/TwilioStateMachine-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/TwilioStateMachine/TwilioStateMachine-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/TwilioStateMachine/TwilioStateMachine-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5942677916A47E2C3D335DF09008002B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880F353E4751E274850079D10F66B92C /* APIConstants.swift in Sources */,
+				6317520F5CFE6CBD77F7BAB29CE00FEA /* Authentication.swift in Sources */,
+				7D64488DA2769D0E8AFF3C495C48AD57 /* BaseAPIClient.swift in Sources */,
+				30151A6502FF879274AC8795F30C1F7C /* BasicAuthorization.swift in Sources */,
+				94412AB99A020CFDF4D48DAAA46E078E /* Challenge.swift in Sources */,
+				7A37F5D17A1F4C93DAF3A69A71083244 /* ChallengeAPIClient.swift in Sources */,
+				4DF9268FAC3BB1B366155D4FF1FCC0F7 /* ChallengeDTO.swift in Sources */,
+				D32E310E38A355AFC9FBECA29ECC5019 /* ChallengeFacade.swift in Sources */,
+				3E45980C80BA755BB46BA05B03E0F894 /* ChallengeList.swift in Sources */,
+				E3D2EE2AD483AA295B4E75028616E58D /* ChallengeListDTO.swift in Sources */,
+				B2E01DF623D25DF3912B67F49BE01C42 /* ChallengeListMapper.swift in Sources */,
+				E5AB9378244561A9BDA007CAE09C6394 /* ChallengeListPayload.swift in Sources */,
+				3BCC1EC480F480AE1C27788CCB1CA95F /* ChallengeMapper.swift in Sources */,
+				CB512B1E93B6C110FC75A6D2E9499E16 /* ChallengeRepository.swift in Sources */,
+				7CE09BC1D4F7EAEA8281AD7540902184 /* DateFormatter+Extensions.swift in Sources */,
+				11EE738AA71A04977EE9F02C4EDB3DB4 /* DateProvider.swift in Sources */,
+				6602F4C4477107876F8BAE52F2603DE5 /* DefaultLogger.swift in Sources */,
+				5537FAE903DAAABB0334E417435A2935 /* ECP256SignerTemplate.swift in Sources */,
+				B58D3A6824DF94B229DE7CD14F14DC44 /* ECSigner.swift in Sources */,
+				3D462B703B8663FCB97B0184DCBA8A47 /* Factor.swift in Sources */,
+				0BF8F079C05A649921E8BDD6EA7FA428 /* FactorAPIClient.swift in Sources */,
+				B6B0178DE1B96ED03413C2FA5EFD5F58 /* FactorChallenge.swift in Sources */,
+				8A732DCB7E1A2C7B1ECE9B7CF087F03A /* FactorDataPayload.swift in Sources */,
+				046FC102DB5E23424361FF3057A0D022 /* FactorFacade.swift in Sources */,
+				ED6345C3DB8013531A44260C063D5C3E /* FactorMapper.swift in Sources */,
+				253FD09D5158F52F64866D3CE79C21B4 /* FactorMigrations.swift in Sources */,
+				78DCADD90BF2BC1DD48080863216E7A1 /* FactorPayload.swift in Sources */,
+				0342C55F4943DCCCF956A12F6F04BDE6 /* FactorRepository.swift in Sources */,
+				409716ED31A25A84DA7D29313ADB2D66 /* HTTPHeaders.swift in Sources */,
+				FE4DB2A913D4FA40EB0305F4B65DDE4E /* HTTPMethod.swift in Sources */,
+				5A950AD885904CAED5FE9632EFEB5817 /* JwtGenerator.swift in Sources */,
+				C6328E3E209323787EE85EE6461F0EC7 /* JwtSigner.swift in Sources */,
+				A841878587BB28D53FB25347442E9EC8 /* Keychain.swift in Sources */,
+				3C3A7DBA72BF2E5CF706B90A2C14BAF2 /* KeychainQuery.swift in Sources */,
+				DB4EF835B0D712FD07D8ED8D1D3280A8 /* KeyManager.swift in Sources */,
+				6BDE06F74F886C0A3B842C40B1F5CA35 /* KeyPair.swift in Sources */,
+				F2FB72A999516FDC8BAFAAF06757EECB /* KeyStorage.swift in Sources */,
+				735E0179426F82E174CAB35CB0438040 /* Logger.swift in Sources */,
+				A8CD16A8146698824DF9E34A36FFF5B6 /* MapperError.swift in Sources */,
+				3E86B4BD50CFD901E22631FE0BBB8FA7 /* MediaType.swift in Sources */,
+				FC24E7816D6A6139DED04E85C356C4D4 /* Metadata.swift in Sources */,
+				551FB532B2F14F3129B96C659232B384 /* Migration.swift in Sources */,
+				FAC6AD7E6A578677666D193656419571 /* NetworkAdapter.swift in Sources */,
+				C878A5973279CD6B8D4F7D4B9140B20A /* NetworkError.swift in Sources */,
+				CD741BA21BA7307EFEAF0F948208FDF1 /* NetworkProvider+Models.swift in Sources */,
+				C5AA2B7184C5A753068D3FA88AE6BA36 /* OperationErrors.swift in Sources */,
+				B07016AD2B8007445F3353D4AA86BDF5 /* OSLogWrapper.swift in Sources */,
+				75CA206A88C2E6EB0A5B254190D8AFA4 /* Parameters.swift in Sources */,
+				124F071CB2899094F62E899EEBD2E09C /* PushChallengeProcessor.swift in Sources */,
+				BF2B89615511AE2FDABE51C9434FB341 /* PushFactor.swift in Sources */,
+				10818E7DAD504382BEFCAD76C42D08C1 /* PushFactorDTO.swift in Sources */,
+				CEB12CCD653621CFDF7F255C5E370744 /* PushFactory.swift in Sources */,
+				13F268B00FA7065D9E9FFECDD72627F4 /* RequestHelper.swift in Sources */,
+				545B73DD13CD96352F939BEF23BA245F /* SecureStorage.swift in Sources */,
+				53038B27716285A9ED2F670CCD719B71 /* Storage.swift in Sources */,
+				6CC8DF71DFFC3BEA8CA6481D8987D8A1 /* Storage+AccessGroup.swift in Sources */,
+				AB43B3F56434C7B4455F3ED674CEB12B /* StorageProvider.swift in Sources */,
+				EF9535B7DC32D2B07274D6F96795E97F /* StringInterpolation+Extensions.swift in Sources */,
+				246E3038D9B4A1AF646EE8BE21DFBC46 /* Template.swift in Sources */,
+				41FE680E4DAF755CB80D7E94BA14DB04 /* TwilioVerify.swift in Sources */,
+				B1ACE7DE99630C071A8F67D0B9283BDA /* TwilioVerify-dummy.m in Sources */,
+				DD23208366B8F3465F1C983267B29638 /* TwilioVerifyConfig.swift in Sources */,
+				BC28B6A95BA2FC7992666E21A522E57A /* TwilioVerifyError.swift in Sources */,
+				2AD91A5FB74685F1B6C5074C5C96E6A6 /* TwilioVerifyManager.swift in Sources */,
+				EE813E42575538E2627D6547E567E50D /* UpdateChallengePayload.swift in Sources */,
+				62C667C59E8EF5D2994FFB46228A6F91 /* UpdateFactorPayload.swift in Sources */,
+				68EF8F0FFE61CC46DBEEF8818F12C605 /* URLRequestBuilder.swift in Sources */,
+				D5AA08736816D2B746216428DDD7EC87 /* VerifyFactorPayload.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9641E3314F2D38904B9D5B134B25B802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64ABE252DE0E2DAE8CDE272D3772AB02 /* Pods-OTPViaWhatsappTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20EB59B4407EB13963D63FEA8F136BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E70A65428A281D6388FE78D347FAC2A /* Pods-OTPViaWhatsapp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E653D18E5806CE0EB5AD4379DBA300BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B44CC5ABACD6C222598BF0DB7AF306 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261065F6546CF222021ECFF689AD6FB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioTwilsockLib;
+			target = 13720C82CBDD530272DF99EFEDA3C6CF /* TwilioTwilsockLib */;
+			targetProxy = D397814016FFA756355B69BA3FAC8B68 /* PBXContainerItemProxy */;
+		};
+		2A4299B49AFA0CA7396E41EFA3416C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioCommonLib;
+			target = 4E2F51DDC73137FD3E9DFCE3FA62C5C9 /* TwilioCommonLib */;
+			targetProxy = 7E55B9798E27731BF74E75A40A606E67 /* PBXContainerItemProxy */;
+		};
+		2E04BE174841C6246E50BB1543A269E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OTPViaWhatsapp";
+			target = 099AB5B16B8EC28C1081B28C1D111920 /* Pods-OTPViaWhatsapp */;
+			targetProxy = AA9C79C51F976DA4C88273A0A66530D7 /* PBXContainerItemProxy */;
+		};
+		3C73741C83505F134090EE17DD887214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioSyncClient;
+			target = 9850155A3CF46354A6D482C894F42B43 /* TwilioSyncClient */;
+			targetProxy = 0007180B81CF25351BB6874DA148A18D /* PBXContainerItemProxy */;
+		};
+		4FC6AB631301A0F97AD4D3E973D120C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioStateMachine;
+			target = B580861207E90FF7AF4257A61B108DD2 /* TwilioStateMachine */;
+			targetProxy = 1A76DB006335E0E0D2ADD93BF100C65C /* PBXContainerItemProxy */;
+		};
+		62A1AEE8E2AD11697099E58B0C5773F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioTwilsockLib;
+			target = 13720C82CBDD530272DF99EFEDA3C6CF /* TwilioTwilsockLib */;
+			targetProxy = 410648FF2C7C9A55C8B70C105B73C345 /* PBXContainerItemProxy */;
+		};
+		8E5AD7C59558FB9812476F966ACD0482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioCommonLib;
+			target = 4E2F51DDC73137FD3E9DFCE3FA62C5C9 /* TwilioCommonLib */;
+			targetProxy = DD9445E0630E80ED7D95A63D51A5C0D7 /* PBXContainerItemProxy */;
+		};
+		B0D9E1B801BD50470C7B32D28B612C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioCommonLib;
+			target = 4E2F51DDC73137FD3E9DFCE3FA62C5C9 /* TwilioCommonLib */;
+			targetProxy = BDC676B8D03B5224B20E4EBFD68EC731 /* PBXContainerItemProxy */;
+		};
+		BA2DC67970EAB98A2255B8BE51375D31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioSyncClient;
+			target = 9850155A3CF46354A6D482C894F42B43 /* TwilioSyncClient */;
+			targetProxy = 18A2C15544F35E067C08338B45AED4A6 /* PBXContainerItemProxy */;
+		};
+		C75130629EE35823111ACD7D4CA00ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioStateMachine;
+			target = B580861207E90FF7AF4257A61B108DD2 /* TwilioStateMachine */;
+			targetProxy = 4CC354C721D012E2E0794842A24716D9 /* PBXContainerItemProxy */;
+		};
+		D170E9538FE4C8E10BF3AD1D1F1D717F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioVerify;
+			target = 9394AC08A5D77FAA613BD0D000318B56 /* TwilioVerify */;
+			targetProxy = 14AFA3822AF82A3247BAFE0D496556AB /* PBXContainerItemProxy */;
+		};
+		E96BD76CBEF4FB8BF70549DE58B5231A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioVerify;
+			target = 9394AC08A5D77FAA613BD0D000318B56 /* TwilioVerify */;
+			targetProxy = 86D185C304BD9D236D22731F1B275A94 /* PBXContainerItemProxy */;
+		};
+		EB7F83F6DE57118A2BA1546F4F389995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioTwilsockLib;
+			target = 13720C82CBDD530272DF99EFEDA3C6CF /* TwilioTwilsockLib */;
+			targetProxy = A0ADE3B8C96CF8AFF1C385AD1A7590C9 /* PBXContainerItemProxy */;
+		};
+		FD0D6E33BD3EFCD51B3F769EB664A62E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwilioStateMachine;
+			target = B580861207E90FF7AF4257A61B108DD2 /* TwilioStateMachine */;
+			targetProxy = 0443EC8AF066244C4C271A96D015DFFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11823DBFF505A1BE421AE60476DBD4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A900D12F7294D905CC43EEB05A6D38C /* TwilioStateMachine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		219E742C612A52463E5A95AE48525F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06CB1AC3BBB2DEC9D2E3432368CAC6E /* Pods-OTPViaWhatsapp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23638E8AAD1BA833836C28D59BA8EDF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910975F2BEAFECBF5C2D0255292AD2E9 /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34881AE8EA48A15A193EE4C5B9456AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63BEB9B3A2F513847CC2DF30CB62C63 /* TwilioTwilsockLib.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6901620B1B1280146F1C189FA531890E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5DDED670C77552767BC9107E228E0C /* Pods-OTPViaWhatsapp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTPViaWhatsapp/Pods-OTPViaWhatsapp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		71DAD2DA5DDED02EFFD0A0921078360A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CFC4AD8574B3E1B2EDEAF13B49AA07 /* Pods-OTPViaWhatsappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTPViaWhatsappTests/Pods-OTPViaWhatsappTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTPViaWhatsappTests/Pods-OTPViaWhatsappTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8BB36438FE09D1B3B66CB4D8ECACF985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD2651A5CB78461AE8DD39F125B5F7B /* Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests/Pods-OTPViaWhatsapp-OTPViaWhatsappUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9853E7F42518296BFA2B035789354EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C53AF292A1369B3B36B831DCFC682F1 /* TwilioCommonLib.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2BE6782EC2BFF48175271162ADFB368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A829173904E36CE6A0D074DEDB8AE1 /* TwilioSyncClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEFD33176A27ACDF869CD245B561808B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 268EBEFFC1C74C267619BC57605F3E55 /* TwilioSyncClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0DDC448C24CF78659ECDC0F63A0AE39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F028C42F3770903893733953605882F /* TwilioStateMachine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B17282F43DC0A97E0C85803BCBCE5E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B821870A38FFA6E8514A07C864C604C /* TwilioVerify.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TwilioVerify/TwilioVerify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TwilioVerify/TwilioVerify-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TwilioVerify/TwilioVerify.modulemap";
+				PRODUCT_MODULE_NAME = TwilioVerifySDK;
+				PRODUCT_NAME = TwilioVerifySDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C0AB3350E940BDB2C48F4147606F162D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36828F9241D9E5CAADCADF0276EB820 /* TwilioCommonLib.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D982FED5EBA757AF9861062D486F45B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E88E66774B9CBD4D8A972EE656A509E /* TwilioVerify.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TwilioVerify/TwilioVerify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TwilioVerify/TwilioVerify-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TwilioVerify/TwilioVerify.modulemap";
+				PRODUCT_MODULE_NAME = TwilioVerifySDK;
+				PRODUCT_NAME = TwilioVerifySDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE0534B715A4DFE81380147BF4AD3F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C83F0C044AB47C7B9993DD97A5A7B7 /* Pods-OTPViaWhatsappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OTPViaWhatsappTests/Pods-OTPViaWhatsappTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OTPViaWhatsappTests/Pods-OTPViaWhatsappTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FB1D6FE7ECBE1DAC16BED1A5A6E46DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181C02EEF7EA866C99DA26D587A5F829 /* TwilioTwilsockLib.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15FBA4821E123E88F91F1A7B32A7A33D /* Build configuration list for PBXNativeTarget "TwilioVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17282F43DC0A97E0C85803BCBCE5E0C /* Debug */,
+				D982FED5EBA757AF9861062D486F45B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C321BBA2435CE94F445F65CC19D9B7 /* Build configuration list for PBXAggregateTarget "TwilioSyncClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2BE6782EC2BFF48175271162ADFB368 /* Debug */,
+				AEFD33176A27ACDF869CD245B561808B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E9D461EA74C0110FB76CF4E65CACB9 /* Build configuration list for PBXNativeTarget "Pods-OTPViaWhatsappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE0534B715A4DFE81380147BF4AD3F6B /* Debug */,
+				71DAD2DA5DDED02EFFD0A0921078360A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327C7663772B9B6FCC3D44A4CDA3BC9C /* Build configuration list for PBXNativeTarget "Pods-OTPViaWhatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219E742C612A52463E5A95AE48525F0D /* Debug */,
+				6901620B1B1280146F1C189FA531890E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DDE9F721FA3096017984D95ED326D2B /* Build configuration list for PBXAggregateTarget "TwilioStateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0DDC448C24CF78659ECDC0F63A0AE39 /* Debug */,
+				11823DBFF505A1BE421AE60476DBD4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F45CBC50A821705C5F870567711C1F5 /* Build configuration list for PBXAggregateTarget "TwilioTwilsockLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1D6FE7ECBE1DAC16BED1A5A6E46DA3 /* Debug */,
+				34881AE8EA48A15A193EE4C5B9456AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E0EA871E46CC4D589FBFFB51AB28120 /* Build configuration list for PBXNativeTarget "Pods-OTPViaWhatsapp-OTPViaWhatsappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23638E8AAD1BA833836C28D59BA8EDF3 /* Debug */,
+				8BB36438FE09D1B3B66CB4D8ECACF985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2B993114E506FB3BF873C3D5E7B67E /* Build configuration list for PBXAggregateTarget "TwilioCommonLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0AB3350E940BDB2C48F4147606F162D /* Debug */,
+				9853E7F42518296BFA2B035789354EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

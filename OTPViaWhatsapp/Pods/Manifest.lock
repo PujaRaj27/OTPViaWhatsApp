@@ -1,0 +1,32 @@
+PODS:
+  - TwilioCommonLib (2.0.1)
+  - TwilioStateMachine (2.0.1)
+  - TwilioSyncClient (2.0.2):
+    - TwilioTwilsockLib (= 2.0.1)
+  - TwilioTwilsockLib (2.0.1):
+    - TwilioCommonLib (= 2.0.1)
+    - TwilioStateMachine (= 2.0.1)
+  - TwilioVerify (2.2.2)
+
+DEPENDENCIES:
+  - TwilioSyncClient (~> 2.0)
+  - TwilioVerify
+
+SPEC REPOS:
+  trunk:
+    - TwilioCommonLib
+    - TwilioStateMachine
+    - TwilioSyncClient
+    - TwilioTwilsockLib
+    - TwilioVerify
+
+SPEC CHECKSUMS:
+  TwilioCommonLib: 3114ce2077257df42fada4c532f1f16464df2e5d
+  TwilioStateMachine: 25cfb74eba992b3d63fec2a33d231750dbc75064
+  TwilioSyncClient: 09bb8adff098c39fd9eed06f84c6fc2fabddfa3a
+  TwilioTwilsockLib: cb8fc39b0b78d1583426d203df4d572b20813634
+  TwilioVerify: 21757b90775318859ac211a926456de3e039ebb4
+
+PODFILE CHECKSUM: c1cd6f786dfdd827592fa9d4d188d3b0a9f8e209
+
+COCOAPODS: 1.11.3

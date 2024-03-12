@@ -1,0 +1,6 @@
+framework module Pods_OTPViaWhatsappTests {
+  umbrella header "Pods-OTPViaWhatsappTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
